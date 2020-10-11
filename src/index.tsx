@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {SplitIntowords} from "./01-hello-tests/01";
+
+
+const sentence = "Hello my friends!"
+const result = SplitIntowords(sentence)
+console.log(result);
+console.log(result[0]==="hello");
+console.log(result[1]==="my");
+console.log(result[2]==="friends");
 
 ReactDOM.render(
   <React.StrictMode>
