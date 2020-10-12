@@ -4,14 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {SplitIntowords} from "./01-hello-tests/01";
+import {sum} from "./03/03";
 
 
-const sentence = "Hello my friends!"
-const result = SplitIntowords(sentence)
-console.log(result);
-console.log(result[0]==="hello");
-console.log(result[1]==="my");
-console.log(result[2]==="friends");
+var a  = sum;
 
 ReactDOM.render(
   <React.StrictMode>
