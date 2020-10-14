@@ -12,6 +12,13 @@ return houses.map(b => b.address.street.title)
 }
 
 export function createMessages(houses: Array<HouseType>){
-return houses.map(h => `Hello guys from ${h.address.street.title}`)
+    let callbackfn = (h:HouseType) => {
+        debugger;
+
+        return `Hello guys from ${h.address.street.title}`}
+
+
+    let newArray = houses.map(callbackfn);
+    return newArray
 
 }
